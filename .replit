@@ -1,6 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* uniqueelement"
-entrypoint = "src/main/java/Pattern/ uniqueelement.java"
+run = "java -classpath .:target/dependency/* Intersection"
+entrypoint = "src/main/java/Pattern/Intersection.java"
 hidden = ["**/*.class"]
 
 [packager]
