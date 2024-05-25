@@ -1,34 +1,29 @@
 import java.util.*;
-import java.util.ArrayList;
 
-class Intersection {
+class Pairsum {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
     int m = sc.nextInt();
     int[] a = new int[n];
-    int[] b = new int[m];
     for (int i = 0; i < n; i++) {
       a[i] = sc.nextInt();
     }
+    int[] b = new int[m];
     for (int i = 0; i < m; i++) {
       b[i] = sc.nextInt();
     }
-    ArrayList<Integer> c = new ArrayList<Integer>();
-    inter(a, b, c);
+    int target = sc.nextInt();
+    sum(a, b, target);
   }
 
-  public static void inter(int[] a, int[] b, ArrayList<Integer> c) {
+  public static void sum(int[] a, int[] b, int target) {
     for (int i = 0; i < a.length; i++) {
       for (int j = 0; j < b.length; j++) {
-        if (a[i] == b[j]) {
-          b[j] = -1;
-          c.add(a[i]);
+        if (a[i] + b[j] == target) {
+          System.out.println("(" + a[i] + "," + b[j] + ")");
         }
       }
-    }
-    for (int i : c) {
-      System.out.print(i + " ");
     }
   }
 }
