@@ -1,6 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* Transpose"
-entrypoint = "src/main/java/Pattern/Transpose.java"
+run = "java -classpath .:target/dependency/* findduplicate"
+entrypoint = "src/main/java/Pattern/findduplicate.java"
 hidden = ["**/*.class"]
 
 [packager]
