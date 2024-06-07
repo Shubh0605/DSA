@@ -1,38 +1,34 @@
 import java.util.*;
-
-class Sort012{
-
+import java.util.*;
+class Sort0125{
   public static void main(String[] args) {
-      Scanner sc=new Scanner(System.in);
-      int n=sc.nextInt();
-      int arr[] = new int[n];
+      Scanner sc  = new Scanner(System.in);
+      int n = sc.nextInt();
+      int [] a = new int[n];
       for(int i=0;i<n;i++){
-        arr[i]=sc.nextInt();
+          a[i] = sc.nextInt();
       }
-      sort(arr);
+      int temp = 0;
+      int l = 0;
+      int h = a.length-1;
       for(int i=0;i<n;i++){
-        System.out.print(arr[i]+" ");
+        if(a[i]==0){
+        temp = a[l];
+        a[l] = a[i];
+        a[i] = temp;
+        l++;
       }
-    }
-
-  static int[] sort(int arr[]) {
-    int start = 0, mid = 0, end = arr.length - 1, c = 0;
-    for (int i = 0; i <= end; i++) {
-      if (arr[i] == 0) {
-        c = arr[start];
-        arr[start] = arr[i];
-        arr[i] = c;
-        start++;
-
-      } else if (arr[i] == 2) {
-        c = arr[end];
-        arr[end] = arr[i];
-        arr[i] = c;
-        end--;
+      else if(a[i]==2){
+        temp = a[h];
+        a[h] = a[i];
+        a[i] = temp;
+        h--;
+        n--;
         i--;
       }
-
-    }
-    return arr;
+      }
+      for(int i=0;i<a.length;i++){
+      System.out.print(a[i]+" ");
+      }
   }
 }

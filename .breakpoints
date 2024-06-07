@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "src/main/java/Array/findduplicate.java": [
+      {
+        "id": "5992418b-3182-48d5-992e-a5a611f68c6a",
+        "line": 2,
+        "version": 106,
+        "index": 20
+      }
+    ]
+  }
 }

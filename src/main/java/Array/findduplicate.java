@@ -1,14 +1,14 @@
 import java.util.*;
 class findduplicate{
   public static void main(String[] args){
-    int [] nums = {1,3,4,2,2};
-    Arrays.sort(nums);
-    int ans = 0;
-    for(int i=0;i<nums.length-1;i++){
-      if(nums[i] == nums[i+1]){
-        ans = nums[i];
-      }
+    int [] a = {1,3,4,2,2};
+    int temp = 0;
+    while(a[0] != a[a[0]]){
+      temp = a[a[0]];
+      a[a[0]] = a[0];
+      a[0] = temp;
+      // swap(a[0],a[a[0]]);
     }
-System.out.print(ans);
+    System.out.print(a[0]);
   }
 }
