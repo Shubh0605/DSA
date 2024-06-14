@@ -1,6 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* Missingelementwithduplicate"
-entrypoint = "src/main/java/Pattern/Missingelementwithduplicate.java"
+run = "java -classpath .:target/dependency/* Minimumnumberofjumps"
+entrypoint = "src/main/java/Pattern/Minimumnumberofjumps.java"
 hidden = ["**/*.class"]
 
 [packager]
