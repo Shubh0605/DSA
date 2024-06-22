@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.*;
 class Sort0125{
   public static void main(String[] args) {
       Scanner sc  = new Scanner(System.in);

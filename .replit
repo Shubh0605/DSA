@@ -1,6 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* Minimumnumberofjumps"
-entrypoint = "src/main/java/Pattern/Minimumnumberofjumps.java"
+run = "java -classpath .:target/dependency/* Mergetwosortedarraywithoutextraspace"
+entrypoint = "src/main/java/Pattern/Mergetwosortedarraywithoutextraspace.java"
 hidden = ["**/*.class"]
 
 [packager]
