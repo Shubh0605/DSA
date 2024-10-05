@@ -1,6 +1,6 @@
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "java -classpath .:target/dependency/* Mergetwosortedarraywithoutextraspace"
-entrypoint = "src/main/java/Pattern/Mergetwosortedarraywithoutextraspace.java"
+run = "java -classpath .:target/dependency/* Reverserecursion"
+entrypoint = "src/main/java/ZOPSMART/Reverserecursion.java"
 hidden = ["**/*.class"]
 
 [packager]
